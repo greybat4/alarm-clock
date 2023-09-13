@@ -97,3 +97,19 @@ h3{
     align-items: center;
     margin: 6px auto;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      /* background-color: rgb(6, 72, 94); */
+      background-color: #10101E;
+    }
+  }
+
+@media screen and (max-width: 600px){
+    .main-container{
+        max-width: 60%;
+    }
+    #clock{
+        max-width: 90%;
+    }
+}

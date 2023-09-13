@@ -60,7 +60,6 @@ for(let i=2; i>0;i--){
     let option = `<option value="${ampm}">${ampm}</option>`;
     selectMenu[2].firstElementChild.insertAdjacentHTML("afterend", option);
 }
-
 // add alarm function section it's called when setAlarm button is clicked its then validate currect time and then add it to the alarmlist 
 function setAlarm(){
     document.querySelector("#alarm-row3").innerText = "Alarms";
@@ -80,7 +79,7 @@ function setAlarm(){
         console.log(document.querySelector(".btn-delete").value);
     }
 }
-    // function invoking via click
+    // function invoking via click using event listener
     setAlarmBtn.addEventListener("click",setAlarm);
 
 // delete alarm function called when delete bbutton is clicked and it remove the alarm from the alarm list
